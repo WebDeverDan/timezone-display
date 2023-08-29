@@ -1,0 +1,82 @@
+body {
+  font-family: "Raleway", "sans-serif";
+}
+/* box containing map and data */
+.container {
+  /* border: dotted; */
+  background: white;
+  width: 100%;
+  height: 800px;
+}
+
+.map-and-key {
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  background: #ebe9e5;
+}
+
+img {
+  max-width: 25%;
+  height: auto;
+}
+
+/* color of state when not on hover */
+path {
+  stroke: rgb(0, 0, 0);
+  transition: fill 0.4s ease;
+  transform-origin: center center;
+  border: solid;
+}
+
+/* color of state */
+path:hover {
+  fill: #ffffff !important;
+  cursor: pointer;
+  transform: scale(1.005, 1.005);
+}
+
+/* actual map block */
+#us-map {
+  display: block;
+  background-color: #ebe9e5;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: auto;
+  /* border: solid; */
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* state name */
+#state-name {
+  text-align: center;
+  /* border: dashed; */
+}
+
+/* container with state data - not the name */
+#info-container {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-bottom: 2em;
+}
+/* controls state output text */
+#state-output {
+  margin-top: 0em;
+  margin-bottom: 1em;
+  font-size: 25px;
+  /* border: solid; */
+}
+
+/* controls state power plants text */
+#state-plants {
+  margin-bottom: 0em;
+  margin-top: 0em;
+  font-size: 25px;
+  /* border: solid; */
+}
